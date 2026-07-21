@@ -13,7 +13,8 @@ app = FastAPI(title = "AI Psychiatrist", description = "An AI- powered psychiatr
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  
+    allow_origins=["http://localhost:3000",
+                   "https://mindease-ai-psychologist-wqj9.onrender.com"],  
     allow_credentials=True,
     allow_methods=["*"],   
     allow_headers=["*"],   
